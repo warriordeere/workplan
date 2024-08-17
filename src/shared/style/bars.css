@@ -22,8 +22,7 @@ menu.sidebar {
 
 .sidebar-item {
     height: 2.5rem;
-    padding: .25rem;
-    padding-left: .75rem;
+    padding: .25rem .75rem;
     margin-right: 1.25rem;
     background-color: var(--background);
     border-radius: 0 .5rem .5rem 0;
@@ -40,13 +39,16 @@ menu.sidebar {
     height: 100%;
     max-width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    white-space: nowrap;
+    justify-content: center;
+}
+
+.sidebar-primary-label,
+.sidebar-secondary-label {
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    box-sizing: border-box;
+    text-align: center;
 }
 
 .sidebar-primary-label {

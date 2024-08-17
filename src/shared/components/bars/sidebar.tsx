@@ -25,8 +25,12 @@ export function Sidebar() {
 function SidebarItem({ item }: { item: SidebarInterface }) {
     return (
         <div className="sidebar-item">
-            <h4 className="sidebar-label sidebar-primary-label">{item.primary_label},</h4>
-            &nbsp;<p className="sidebar-label sidebar-secondary-label">{item.secondary_label}</p>
+            <div className="sidebar-label">
+                <h4 className="sidebar-primary-label">{item.primary_label},</h4>
+            </div>
+            <div className="sidebar-label">
+                &nbsp;<p className="sidebar-secondary-label">{item.secondary_label}</p>
+            </div>
         </div>
     );
 }
