@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100dvh;
     width: 100dvw;
@@ -135,6 +139,7 @@ menu {
 
 .app-container {
     display: grid;
-    grid-template-columns: 20rem auto;
+    grid-template-columns: auto auto;
     grid-template-rows: 5rem calc(100dvh - 5rem);
+    position: relative;
 }
